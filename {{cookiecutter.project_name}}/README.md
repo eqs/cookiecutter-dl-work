@@ -1,8 +1,10 @@
 # {{ cookiecutter.project_name }}
 
+{{ cookiecutter.project_description }}
+
 # Authors
 
-{{ cookiecutter.project_description }}
+{{ cookiecutter.author_name }}
 
 # How to use
 
