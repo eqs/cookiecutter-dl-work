@@ -14,7 +14,6 @@ services:
         ports:
             - "${JUPYTER_PORT}:8888"
             - "${TFBOARD_PORT}:6006"
-            - "${DATABENCH_PORT}:3000"
         volumes:
             - .:/work
         environment:
