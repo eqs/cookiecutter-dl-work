@@ -1,5 +1,7 @@
 # cookiecutter-dl-work
 
+A [cookiecutter](https://github.com/cookiecutter/cookiecutter) template for deep learning research
+
 ## Usage
 
 ### Generate project
