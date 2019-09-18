@@ -1,0 +1,21 @@
+version: '2.3'
+
+services:
+    {{ cookiecutter.project_name}}-work:
+        runtime: nvidia
+        build:
+            context: .
+            dockerfile: docker/Dockerfile
+            args:
+                user_id: "${UID}"
+                group_id: "${GID}"
+        user: "ubuntu"
+        command: bash /work/docker/docker-entrypoint.sh
+        ports:
+            - "${JUPYTER_PORT}:8888"
+            - "${TFBOARD_PORT}:6006"
+        volumes:
+            - .:/work
+        environment:
+            NVIDIA_VISIBLE_DEVICES: '0'
+
