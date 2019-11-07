@@ -19,7 +19,7 @@ Run following commands:
 ```bash
 $ cookiecutter https://github.com/eqs/cookiecutter-dl-work
 # cd to generated project dir
-$ docker-compose build
+$ docker-compose build # (or docker-compose build --no-cache)
 $ docker-compose up -d
 ```
 
